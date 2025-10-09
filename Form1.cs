@@ -16,5 +16,15 @@ namespace TP_Modbus
         {
             InitializeComponent();
         }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            textBox2.AppendText("Connexion au serveur 172.17.50.180");
+        }
     }
 }

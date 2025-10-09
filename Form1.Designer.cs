@@ -28,13 +28,81 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.labelAdresseIP = new System.Windows.Forms.Label();
+            this.textBoxAdressIP = new System.Windows.Forms.TextBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.SuspendLayout();
+            // 
+            // labelAdresseIP
+            // 
+            this.labelAdresseIP.AutoSize = true;
+            this.labelAdresseIP.Location = new System.Drawing.Point(52, 43);
+            this.labelAdresseIP.Name = "labelAdresseIP";
+            this.labelAdresseIP.Size = new System.Drawing.Size(54, 13);
+            this.labelAdresseIP.TabIndex = 0;
+            this.labelAdresseIP.Text = "Ip serveur";
+            // 
+            // textBoxAdressIP
+            // 
+            this.textBoxAdressIP.Location = new System.Drawing.Point(112, 40);
+            this.textBoxAdressIP.Name = "textBoxAdressIP";
+            this.textBoxAdressIP.Size = new System.Drawing.Size(144, 20);
+            this.textBoxAdressIP.TabIndex = 1;
+            this.textBoxAdressIP.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(353, 40);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(75, 23);
+            this.button1.TabIndex = 2;
+            this.button1.Text = "Connexion";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(450, 40);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(89, 23);
+            this.button2.TabIndex = 3;
+            this.button2.Text = "Deconnexion";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(570, 40);
+            this.textBox2.Multiline = true;
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(197, 389);
+            this.textBox2.TabIndex = 4;
+            // 
+            // Form1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.button2);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.textBoxAdressIP);
+            this.Controls.Add(this.labelAdresseIP);
+            this.Name = "Form1";
             this.Text = "Form1";
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
         }
 
         #endregion
+
+        private System.Windows.Forms.Label labelAdresseIP;
+        private System.Windows.Forms.TextBox textBoxAdressIP;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.TextBox textBox2;
     }
 }
 
