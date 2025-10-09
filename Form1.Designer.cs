@@ -50,7 +50,7 @@
             this.textBoxAdressIP.Name = "textBoxAdressIP";
             this.textBoxAdressIP.Size = new System.Drawing.Size(144, 20);
             this.textBoxAdressIP.TabIndex = 1;
-            this.textBoxAdressIP.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+
             // 
             // button1
             // 
@@ -70,6 +70,7 @@
             this.button2.TabIndex = 3;
             this.button2.Text = "Deconnexion";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // textBox2
             // 
