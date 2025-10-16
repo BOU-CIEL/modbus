@@ -1,5 +1,4 @@
-﻿using modbus;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -16,11 +15,9 @@ namespace TP_Modbus
 {
     public partial class Form1 : Form
     {
-        private CModbus modbus;
         public Form1()
         {
             InitializeComponent();
-            modbus = new CModbus();
         }
         private Socket socket;
         private byte[] trameE;
